@@ -15,9 +15,10 @@ define('domo.compiler', function (require) {
       var tokens = copy(attributes);
       tokens[elementName] = true;
 
-      each(tokens, function (token) {
-        if (!isFunction(grammar[token])) { return; }
-        breakCompilation = grammar[token](node, attributes, scope, compile);
+      each(tokens, function (item, index) {
+        var token = grammar[index];
+        if (!isFunction(token)) { return; }
+        breakCompilation = token(node, attributes, scope, compile);
       });
 
       if (breakCompilation) { return; }
