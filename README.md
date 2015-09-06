@@ -1,7 +1,7 @@
 domo.compiler
 =============
 
-Compile an HTML node extended with custom elements and attributes
+Compile HTML extended with custom elements and attributes
 
 Usage
 -----
