@@ -1,7 +1,7 @@
 dom.compiler
 ============
 
-Compile HTML extended with custom elements and attributes
+A [dom plugin](https://github.com/mujs/dom) for custom HTML elements
 
 Usage
 -----
