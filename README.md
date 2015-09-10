@@ -1,5 +1,5 @@
-domo.compiler
-=============
+dom.compiler
+============
 
 Compile HTML extended with custom elements and attributes
 
@@ -12,11 +12,11 @@ Usage
 
 ```js
 var grammar = {
-  model   : require('domo.grammar.model')
+  model   : require('dom.grammar.model')
 };
 
-var dom   = require('domo').use({
-  compile : require('domo.compiler')(grammar)
+var dom   = require('dom').use({
+  compile : require('dom.compiler')(grammar)
 });
 
 dom('body').compile({ title: 'It works!' });
