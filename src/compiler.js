@@ -1,10 +1,10 @@
-define('domo.compiler', function (require) {
+define('mu.dom.compiler', function (require) {
   'use strict';
 
   var isFunction = require('mu.is.function'),
       each       = require('mu.list.each'),
       copy       = require('mu.list.copy'),
-      attr       = require('domo.attr');
+      attr       = require('mu.dom.attr');
 
   var compiler = function (grammar) {
     var compile = function (node, scope) {
